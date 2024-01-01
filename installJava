@@ -102,7 +102,7 @@ sudo apt install -y -qq screen neofetch
 echo "export PATH=$PATH:/some/new/path" > ~/.profile
 echo "> Dependencies Installtion Completed!"
 
-#Downloading ngrok && Downloading Minecraft Server
+#Downloading ngrok , PlayIt && Downloading Minecraft Server
 mkdir server 
 
 echo ""
