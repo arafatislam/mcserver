@@ -41,9 +41,17 @@ install_server () {
     cd JavaInstallScripts
     chmod +x *
     ./PaperInstall
+	
+  # Purpur
+  elif [[ $choice == 3 ]]
+  then
+    echo "> Installing Purpur..."
+    cd JavaInstallScripts
+    chmod +x *
+    ./PurpurInstall
 
   # Forge
-  elif [[ $choice == 3 ]]
+  elif [[ $choice == 4 ]]
   then
     echo "> Installing Forge..."
     cd JavaInstallScripts
@@ -51,7 +59,7 @@ install_server () {
     ./ForgeInstall
 
   # Sponge
-  elif [[ $choice == 4 ]]
+  elif [[ $choice == 5 ]]
   then
     echo "> Installing Sponge..."
     cd JavaInstallScripts
@@ -59,7 +67,7 @@ install_server () {
     ./SpongeInstall
 
   # Fabric
-  elif [[ $choice == 5 ]]
+  elif [[ $choice == 6 ]]
   then
     echo "> Installing Fabric..."
     cd JavaInstallScripts
@@ -67,14 +75,14 @@ install_server () {
     ./FabricInstall
 
 
-  elif [[ $choice == 6 ]];then
+  elif [[ $choice == 7 ]];then
     echo "> Installing Spigot..."
     cd JavaInstallScripts
     chmod +x *
     ./SpigotInstall
 
 
-  elif [[ $choice == 7 ]];then
+  elif [[ $choice == 8 ]];then
     echo "> Installing Bungeecord..."
     cd JavaInstallScripts
     chmod +x *
@@ -101,11 +109,12 @@ echo ""
 echo "-- Pick the following Server type: --"
 echo "Type [1] Create Vanilla Server"
 echo "Type [2] Create Paper Server"
-echo "Type [3] Create Forge Server"
-echo "Type [4] Create Sponge Server"
-echo "Type [5] Create Fabric Server"
-echo "Type [6] Create Spigot Server(COMPILE)"
-echo "Type [7] Create Bungeecord Server(latest)"
+echo "Type [3] Create Purpur Server"
+echo "Type [4] Create Forge Server"
+echo "Type [5] Create Sponge Server"
+echo "Type [6] Create Fabric Server"
+echo "Type [7] Create Spigot Server(COMPILE)"
+echo "Type [8] Create Bungeecord Server(latest)"
 choiceForServer=1
 read choiceForServer
 
